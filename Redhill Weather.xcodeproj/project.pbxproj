@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B48AC4027A485D8005B6351 /* Redhill_WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B48AC3F27A485D8005B6351 /* Redhill_WeatherApp.swift */; };
+		7B48AC4227A485D8005B6351 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B48AC4127A485D8005B6351 /* ContentView.swift */; };
+		7B48AC4427A485DA005B6351 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B48AC4327A485DA005B6351 /* Assets.xcassets */; };
+		7B48AC4727A485DA005B6351 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B48AC4627A485DA005B6351 /* Preview Assets.xcassets */; };
+		7B48AC5127A485DB005B6351 /* Redhill_WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B48AC5027A485DB005B6351 /* Redhill_WeatherTests.swift */; };
+		7B48AC5B27A485DB005B6351 /* Redhill_WeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B48AC5A27A485DB005B6351 /* Redhill_WeatherUITests.swift */; };
+		7B48AC5D27A485DB005B6351 /* Redhill_WeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B48AC5C27A485DB005B6351 /* Redhill_WeatherUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7B48AC4D27A485DB005B6351 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B48AC3427A485D8005B6351 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B48AC3B27A485D8005B6351;
+			remoteInfo = "Redhill Weather";
+		};
+		7B48AC5727A485DB005B6351 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B48AC3427A485D8005B6351 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B48AC3B27A485D8005B6351;
+			remoteInfo = "Redhill Weather";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7B48AC3C27A485D8005B6351 /* Redhill Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Redhill Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B48AC3F27A485D8005B6351 /* Redhill_WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redhill_WeatherApp.swift; sourceTree = "<group>"; };
+		7B48AC4127A485D8005B6351 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7B48AC4327A485DA005B6351 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B48AC4627A485DA005B6351 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7B48AC4C27A485DB005B6351 /* Redhill WeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Redhill WeatherTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B48AC5027A485DB005B6351 /* Redhill_WeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redhill_WeatherTests.swift; sourceTree = "<group>"; };
+		7B48AC5627A485DB005B6351 /* Redhill WeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Redhill WeatherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B48AC5A27A485DB005B6351 /* Redhill_WeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redhill_WeatherUITests.swift; sourceTree = "<group>"; };
+		7B48AC5C27A485DB005B6351 /* Redhill_WeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redhill_WeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B48AC3927A485D8005B6351 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B48AC4927A485DB005B6351 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B48AC5327A485DB005B6351 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B48AC3327A485D8005B6351 = {
+			isa = PBXGroup;
+			children = (
+				7B48AC3E27A485D8005B6351 /* Redhill Weather */,
+				7B48AC4F27A485DB005B6351 /* Redhill WeatherTests */,
+				7B48AC5927A485DB005B6351 /* Redhill WeatherUITests */,
+				7B48AC3D27A485D8005B6351 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B48AC3D27A485D8005B6351 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B48AC3C27A485D8005B6351 /* Redhill Weather.app */,
+				7B48AC4C27A485DB005B6351 /* Redhill WeatherTests.xctest */,
+				7B48AC5627A485DB005B6351 /* Redhill WeatherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B48AC3E27A485D8005B6351 /* Redhill Weather */ = {
+			isa = PBXGroup;
+			children = (
+				7B48AC3F27A485D8005B6351 /* Redhill_WeatherApp.swift */,
+				7B48AC4127A485D8005B6351 /* ContentView.swift */,
+				7B48AC4327A485DA005B6351 /* Assets.xcassets */,
+				7B48AC4527A485DA005B6351 /* Preview Content */,
+			);
+			path = "Redhill Weather";
+			sourceTree = "<group>";
+		};
+		7B48AC4527A485DA005B6351 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7B48AC4627A485DA005B6351 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7B48AC4F27A485DB005B6351 /* Redhill WeatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				7B48AC5027A485DB005B6351 /* Redhill_WeatherTests.swift */,
+			);
+			path = "Redhill WeatherTests";
+			sourceTree = "<group>";
+		};
+		7B48AC5927A485DB005B6351 /* Redhill WeatherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7B48AC5A27A485DB005B6351 /* Redhill_WeatherUITests.swift */,
+				7B48AC5C27A485DB005B6351 /* Redhill_WeatherUITestsLaunchTests.swift */,
+			);
+			path = "Redhill WeatherUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B48AC3B27A485D8005B6351 /* Redhill Weather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B48AC6027A485DB005B6351 /* Build configuration list for PBXNativeTarget "Redhill Weather" */;
+			buildPhases = (
+				7B48AC3827A485D8005B6351 /* Sources */,
+				7B48AC3927A485D8005B6351 /* Frameworks */,
+				7B48AC3A27A485D8005B6351 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Redhill Weather";
+			productName = "Redhill Weather";
+			productReference = 7B48AC3C27A485D8005B6351 /* Redhill Weather.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7B48AC4B27A485DB005B6351 /* Redhill WeatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B48AC6327A485DB005B6351 /* Build configuration list for PBXNativeTarget "Redhill WeatherTests" */;
+			buildPhases = (
+				7B48AC4827A485DB005B6351 /* Sources */,
+				7B48AC4927A485DB005B6351 /* Frameworks */,
+				7B48AC4A27A485DB005B6351 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B48AC4E27A485DB005B6351 /* PBXTargetDependency */,
+			);
+			name = "Redhill WeatherTests";
+			productName = "Redhill WeatherTests";
+			productReference = 7B48AC4C27A485DB005B6351 /* Redhill WeatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7B48AC5527A485DB005B6351 /* Redhill WeatherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B48AC6627A485DB005B6351 /* Build configuration list for PBXNativeTarget "Redhill WeatherUITests" */;
+			buildPhases = (
+				7B48AC5227A485DB005B6351 /* Sources */,
+				7B48AC5327A485DB005B6351 /* Frameworks */,
+				7B48AC5427A485DB005B6351 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B48AC5827A485DB005B6351 /* PBXTargetDependency */,
+			);
+			name = "Redhill WeatherUITests";
+			productName = "Redhill WeatherUITests";
+			productReference = 7B48AC5627A485DB005B6351 /* Redhill WeatherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B48AC3427A485D8005B6351 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					7B48AC3B27A485D8005B6351 = {
+						CreatedOnToolsVersion = 13.2;
+					};
+					7B48AC4B27A485DB005B6351 = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = 7B48AC3B27A485D8005B6351;
+					};
+					7B48AC5527A485DB005B6351 = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = 7B48AC3B27A485D8005B6351;
+					};
+				};
+			};
+			buildConfigurationList = 7B48AC3727A485D8005B6351 /* Build configuration list for PBXProject "Redhill Weather" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7B48AC3327A485D8005B6351;
+			productRefGroup = 7B48AC3D27A485D8005B6351 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B48AC3B27A485D8005B6351 /* Redhill Weather */,
+				7B48AC4B27A485DB005B6351 /* Redhill WeatherTests */,
+				7B48AC5527A485DB005B6351 /* Redhill WeatherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B48AC3A27A485D8005B6351 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B48AC4727A485DA005B6351 /* Preview Assets.xcassets in Resources */,
+				7B48AC4427A485DA005B6351 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B48AC4A27A485DB005B6351 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B48AC5427A485DB005B6351 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B48AC3827A485D8005B6351 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B48AC4227A485D8005B6351 /* ContentView.swift in Sources */,
+				7B48AC4027A485D8005B6351 /* Redhill_WeatherApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B48AC4827A485DB005B6351 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B48AC5127A485DB005B6351 /* Redhill_WeatherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B48AC5227A485DB005B6351 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B48AC5D27A485DB005B6351 /* Redhill_WeatherUITestsLaunchTests.swift in Sources */,
+				7B48AC5B27A485DB005B6351 /* Redhill_WeatherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B48AC4E27A485DB005B6351 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B48AC3B27A485D8005B6351 /* Redhill Weather */;
+			targetProxy = 7B48AC4D27A485DB005B6351 /* PBXContainerItemProxy */;
+		};
+		7B48AC5827A485DB005B6351 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B48AC3B27A485D8005B6351 /* Redhill Weather */;
+			targetProxy = 7B48AC5727A485DB005B6351 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7B48AC5E27A485DB005B6351 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7B48AC5F27A485DB005B6351 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B48AC6127A485DB005B6351 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Redhill Weather/Preview Content\"";
+				DEVELOPMENT_TEAM = C2Y482MP9U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stefanocislaghi.Redhill-Weather";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B48AC6227A485DB005B6351 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Redhill Weather/Preview Content\"";
+				DEVELOPMENT_TEAM = C2Y482MP9U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stefanocislaghi.Redhill-Weather";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7B48AC6427A485DB005B6351 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C2Y482MP9U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stefanocislaghi.Redhill-WeatherTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Redhill Weather.app/Redhill Weather";
+			};
+			name = Debug;
+		};
+		7B48AC6527A485DB005B6351 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C2Y482MP9U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stefanocislaghi.Redhill-WeatherTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Redhill Weather.app/Redhill Weather";
+			};
+			name = Release;
+		};
+		7B48AC6727A485DB005B6351 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C2Y482MP9U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stefanocislaghi.Redhill-WeatherUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Redhill Weather";
+			};
+			name = Debug;
+		};
+		7B48AC6827A485DB005B6351 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C2Y482MP9U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stefanocislaghi.Redhill-WeatherUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Redhill Weather";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B48AC3727A485D8005B6351 /* Build configuration list for PBXProject "Redhill Weather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B48AC5E27A485DB005B6351 /* Debug */,
+				7B48AC5F27A485DB005B6351 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B48AC6027A485DB005B6351 /* Build configuration list for PBXNativeTarget "Redhill Weather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B48AC6127A485DB005B6351 /* Debug */,
+				7B48AC6227A485DB005B6351 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B48AC6327A485DB005B6351 /* Build configuration list for PBXNativeTarget "Redhill WeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B48AC6427A485DB005B6351 /* Debug */,
+				7B48AC6527A485DB005B6351 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B48AC6627A485DB005B6351 /* Build configuration list for PBXNativeTarget "Redhill WeatherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B48AC6727A485DB005B6351 /* Debug */,
+				7B48AC6827A485DB005B6351 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B48AC3427A485D8005B6351 /* Project object */;
+}

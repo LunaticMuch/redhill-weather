@@ -6,9 +6,11 @@
 	<dict>
 		<key>NSExceptionDomains</key>
 		<dict>
-			<key>egkr-mini-metcom.stefanocislaghi.mobi</key>
+			<key>egkr-mini-metcom.ste.io</key>
 			<dict>
 				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+				<key>NSIncludesSubdomains</key>
 				<true/>
 			</dict>
 		</dict>

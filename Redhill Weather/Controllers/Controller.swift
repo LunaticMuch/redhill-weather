@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SwiftyJSON
 
 class RedhillMetar: NSObject, URLSessionDelegate, ObservableObject {
     @Published var lastMetarReport: Metar = Metar()
@@ -17,7 +16,7 @@ class RedhillMetar: NSObject, URLSessionDelegate, ObservableObject {
     }
     
     func loadMetar() {
-        let url = URL(string: "https://egkr-mini-metcom.stefanocislaghi.mobi:8080/api/SamosApi/GetData")!
+        let url = URL(string: "https://egkr-mini-metcom.ste.io:8080/api/SamosApi/GetData")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("application/json, text/plain", forHTTPHeaderField: "Accept")
@@ -59,7 +58,7 @@ class RedhillMetar: NSObject, URLSessionDelegate, ObservableObject {
                     completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void)
     {
         if challenge.protectionSpace.authenticationMethod == NSURLAuthenticationMethodServerTrust {
-            if challenge.protectionSpace.host == "egkr-mini-metcom.stefanocislaghi.mobi" {
+            if challenge.protectionSpace.host == "egkr-mini-metcom.ste.io" {
                 print("NON-Default Handling starting")
                 let trust = challenge.protectionSpace.serverTrust!
                 let credential = URLCredential(trust: trust)

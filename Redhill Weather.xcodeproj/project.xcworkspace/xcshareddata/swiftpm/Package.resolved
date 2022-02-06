@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "DateHelper",
+        "repositoryURL": "https://github.com/melvitax/DateHelper.git",
+        "state": {
+          "branch": null,
+          "revision": "76d0840daab7288fc99b04a4c23d504f0394e083",
+          "version": "5.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

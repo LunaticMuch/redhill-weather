@@ -1,0 +1,22 @@
+POST https://81.2.71.178:8080/api/SamosApi/GetData HTTP/1.1
+Accept: application/json, text/plain, */*
+Content-Type: application/json
+Referer: https://81.2.71.178:8080/mini-met
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkFub255bW91cyIsIm5iZiI6MTY0MzQwMDk1OSwiZXhwIjoyMTE2NDQwOTU5LCJpYXQiOjE2NDM0MDA5NTl9.ihQXbP5ihhStUFDbvBxO0yp8WCQQd5_tpPijBNnCrOA
+
+{
+  "$type": "Miros.Models.SiteQuery, Miros.Repository.Models",
+  "names":["localReport"]
+  "ids": ["828f98f5-8191-48f4-8a71-e48d288759d4"]
+}
+
+
+
+###
+
+  "names": [],
+  "companyNames": [],
+  "companies": [],
+  "attributes": {}
+    "page": null,
+  "pageSize": null,

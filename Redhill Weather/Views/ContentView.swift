@@ -21,7 +21,7 @@ struct ContentView: View {
         if let updatedOnDate = Date(fromString: metar.lastMetarReport.updatedOn, format: .isoDateTimeFull) {
             if (now - updatedOnDate) > 1800 {
                 isUpdated = false
-            }
+            } else {isUpdated = true}
         }
     }
 
@@ -33,7 +33,7 @@ struct ContentView: View {
                     .fontWeight(.bold)
                 Spacer()
                 Button {
-                    metar.loadMetar()
+                    metar.loadMetar(); checkRefresh()
                 } label: {
                     if isUpdated == true {
                         Image(systemName: "arrow.triangle.2.circlepath.circle")

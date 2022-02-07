@@ -43,8 +43,8 @@ class RedhillMetar: NSObject, URLSessionDelegate, ObservableObject {
                 guard let data = data else { return }
                 let decoder = JSONDecoder()
                 self.lastMetarReport = try! decoder.decode(Metar.self, from: data)
+                // TODO: Remove this before first public release
                 print(self.lastMetarReport)
-                
             }
         }
         task.resume()

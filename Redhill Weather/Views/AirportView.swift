@@ -26,8 +26,8 @@ struct AirportView: View {
             }
             Spacer()
             VStack {
-                Text("QNH \(lastMetarReport.qnh)")
-                Text("QFE \(lastMetarReport.qfe)")
+                Text("QNH \(String(lastMetarReport.qnh))")
+                Text("QFE \(String(lastMetarReport.qfe))")
             }
         }
         .padding()

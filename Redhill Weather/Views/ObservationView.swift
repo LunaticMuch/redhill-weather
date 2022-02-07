@@ -23,7 +23,7 @@ struct ObservationView: View {
                 Spacer()
                 Text("\(lastMetarReport.windDirection)° at \(lastMetarReport.windSpeed) knots")
             }
-            if lastMetarReport.windSpeed+10 < lastMetarReport.windSpeedGust {
+            if lastMetarReport.windSpeed+9 < lastMetarReport.windSpeedGust {
                 HStack {
                     Spacer()
                     Text("gusting \(lastMetarReport.windSpeedGust) knots")
@@ -71,7 +71,7 @@ struct ObservationView: View {
                 }
             } else { HStack {
                 Spacer()
-                Text("No Significant Clouds").padding()
+                Text("No Clouds Detected").padding()
                 Spacer()
             }
             }

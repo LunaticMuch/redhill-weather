@@ -10,14 +10,16 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var metar = RedhillMetar()
+    @Environment(\.scenePhase) var scenePhase
     
-    //Mark: This part of the code does not work
     @State var isUpdated: Bool = true
 
-    private func checkRefresh() {
+    // MARK: This function checks whether the metar was issued more than 30 mins from now
+    func checkRefresh() {
+        print("Checking")
         let now = Date()
         if let updatedOnDate = Date(fromString: metar.lastMetarReport.updatedOn, format: .isoDateTimeFull) {
-            if (now - updatedOnDate) > 1100 {
+            if (now - updatedOnDate) > 1800 {
                 isUpdated = false
             }
         }
@@ -73,6 +75,20 @@ struct ContentView: View {
                     Text(updatedOnDate)
                         .font(.caption2)
                 }.padding()
+                
+                // MARK: https://stackoverflow.com/a/67087129/1320351
+                .onChange(of: scenePhase) { newPhase in
+                    switch newPhase {
+                    case .inactive:
+                        return
+                    case .active:
+                        checkRefresh()
+                    case .background:
+                        return
+                    @unknown default:
+                        return
+                    }
+                }
             }
             .padding(.horizontal)
             .background(Color(UIColor.systemGray6).clipShape(RoundedRectangle(cornerRadius: 5)))
@@ -82,7 +98,8 @@ struct ContentView: View {
             MetarView(lastMetarReport: metar.lastMetarReport)
         }
         .padding()
-        .onAppear(perform: { checkRefresh() })
+        
+        
     }
 }
 

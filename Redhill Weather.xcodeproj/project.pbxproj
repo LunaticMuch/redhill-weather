@@ -23,6 +23,7 @@
 		7BE6F14527B026FF00C34B7E /* ObservationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE6F14427B026FF00C34B7E /* ObservationView.swift */; };
 		7BE6F14727B02A8600C34B7E /* AirportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE6F14627B02A8600C34B7E /* AirportView.swift */; };
 		7BE6F14A27B125F900C34B7E /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE6F14927B125F900C34B7E /* Date+Extension.swift */; };
+		7BE6F14C27B5080F00C34B7E /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE6F14B27B5080E00C34B7E /* InfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		7BE6F14627B02A8600C34B7E /* AirportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportView.swift; sourceTree = "<group>"; };
 		7BE6F14827B04A2B00C34B7E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7BE6F14927B125F900C34B7E /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		7BE6F14B27B5080E00C34B7E /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,15 +117,15 @@
 		7B48AC3E27A485D8005B6351 /* Redhill Weather */ = {
 			isa = PBXGroup;
 			children = (
+				7BE6F13D27B023D000C34B7E /* Controllers */,
+				7BE6F13927B0238200C34B7E /* Extensions */,
 				7BE6F13F27B0240900C34B7E /* Helpers */,
 				7BE6F13E27B023DD00C34B7E /* Models */,
-				7BE6F13D27B023D000C34B7E /* Controllers */,
+				7B48AC4527A485DA005B6351 /* Preview Content */,
+				7BE6F13C27B023B200C34B7E /* Views */,
 				7B15C74527A6FF580058F64D /* Redhill-Weather-Info.plist */,
 				7B48AC3F27A485D8005B6351 /* Redhill_WeatherApp.swift */,
-				7BE6F13C27B023B200C34B7E /* Views */,
 				7B48AC4327A485DA005B6351 /* Assets.xcassets */,
-				7B48AC4527A485DA005B6351 /* Preview Content */,
-				7BE6F13927B0238200C34B7E /* Extensions */,
 			);
 			path = "Redhill Weather";
 			sourceTree = "<group>";
@@ -169,6 +171,7 @@
 				7BE6F14227B024DD00C34B7E /* MetarView.swift */,
 				7BE6F14427B026FF00C34B7E /* ObservationView.swift */,
 				7BE6F14627B02A8600C34B7E /* AirportView.swift */,
+				7BE6F14B27B5080E00C34B7E /* InfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B352D5527A9E2E800828E37 /* Model.swift in Sources */,
+				7BE6F14C27B5080F00C34B7E /* InfoView.swift in Sources */,
 				7BE6F14127B0242700C34B7E /* Helpers.swift in Sources */,
 				7BE6F14727B02A8600C34B7E /* AirportView.swift in Sources */,
 				7BE6F13B27B0239600C34B7E /* Collection+Extension.swift in Sources */,
@@ -518,7 +522,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stefanocislaghi.Redhill-Weather";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -550,7 +554,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stefanocislaghi.Redhill-Weather";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

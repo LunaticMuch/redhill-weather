@@ -12,7 +12,7 @@ struct MetarView: View {
     let lastMetarReport: Metar
     
     var body: some View {
-        Text("METAR")
+        Text("FULL METAR")
             .font(.subheadline)
             .fontWeight(.semibold)
             .padding(.top, 9)

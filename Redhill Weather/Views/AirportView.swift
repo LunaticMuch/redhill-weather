@@ -11,7 +11,7 @@ struct AirportView: View {
     let lastMetarReport: Metar
     
     var body: some View {
-        Text("AIRPORT VIEW")
+        Text("RUNWAY INFO")
             .font(.subheadline)
             .fontWeight(.semibold)
             .padding(.top, 9)

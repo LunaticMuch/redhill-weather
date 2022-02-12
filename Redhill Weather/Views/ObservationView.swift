@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct ObservationView: View {
-    
     let lastMetarReport: Metar
-    
+
     var body: some View {
-        Text("OBSERVATION")
+        Text("WEATHER OBSERVATION")
             .font(.subheadline)
             .fontWeight(.semibold)
             .padding(.top, 9)
@@ -23,7 +22,7 @@ struct ObservationView: View {
                 Spacer()
                 Text("\(lastMetarReport.windDirection)° at \(lastMetarReport.windSpeed) knots")
             }
-            if lastMetarReport.windSpeed+9 < lastMetarReport.windSpeedGust {
+            if lastMetarReport.windSpeed + 9 < lastMetarReport.windSpeedGust {
                 HStack {
                     Spacer()
                     Text("gusting \(lastMetarReport.windSpeedGust) knots")
@@ -42,7 +41,24 @@ struct ObservationView: View {
                 Text("\(lastMetarReport.visibility) m")
             }
             Divider()
-                // MARK: This code smells, refactor is required. `ForEach` is the best thing that shuold be used in SwiftUI, but it requires the struct to conform to `Identifiable` or `Hashable`
+            // Group is required to overcome the number of Divider() becoming excessive
+            Group {
+                HStack {
+                    Text("Temperature")
+                    Spacer()
+                    Text("\(lastMetarReport.temperature) °C")
+                }
+                Divider()
+                HStack {
+                    Text("Dew Point")
+                    Spacer()
+                    Text("\(lastMetarReport.dewPoint) °C")
+                }
+            }
+            Divider()
+
+            // MARK: This code smells, refactor is required. `ForEach` is the best thing that shuold be used in SwiftUI, but it requires the struct to conform to `Identifiable` or `Hashable`
+
             if !lastMetarReport.clouds.isEmpty {
                 VStack {
                     if let layer1 = lastMetarReport.clouds[safe: 0] {

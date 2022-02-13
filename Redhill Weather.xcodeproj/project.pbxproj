@@ -10,6 +10,8 @@
 		7B15C74427A6E4D60058F64D /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B15C74327A6E4D60058F64D /* Controller.swift */; };
 		7B352D5527A9E2E800828E37 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B352D5427A9E2E800828E37 /* Model.swift */; };
 		7B352D5827ABCDD700828E37 /* DateHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 7B352D5727ABCDD700828E37 /* DateHelper */; };
+		7B3FC5D827B830E400D68386 /* RefreshableScrollView in Frameworks */ = {isa = PBXBuildFile; productRef = 7B3FC5D727B830E400D68386 /* RefreshableScrollView */; };
+		7B3FC5DA27B97C8800D68386 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3FC5D927B97C8800D68386 /* StatusView.swift */; };
 		7B48AC4027A485D8005B6351 /* Redhill_WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B48AC3F27A485D8005B6351 /* Redhill_WeatherApp.swift */; };
 		7B48AC4227A485D8005B6351 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B48AC4127A485D8005B6351 /* ContentView.swift */; };
 		7B48AC4427A485DA005B6351 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B48AC4327A485DA005B6351 /* Assets.xcassets */; };
@@ -47,6 +49,7 @@
 		7B15C74327A6E4D60058F64D /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		7B15C74527A6FF580058F64D /* Redhill-Weather-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Redhill-Weather-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7B352D5427A9E2E800828E37 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		7B3FC5D927B97C8800D68386 /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
 		7B48AC3C27A485D8005B6351 /* Redhill Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Redhill Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B48AC3F27A485D8005B6351 /* Redhill_WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redhill_WeatherApp.swift; sourceTree = "<group>"; };
 		7B48AC4127A485D8005B6351 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B3FC5D827B830E400D68386 /* RefreshableScrollView in Frameworks */,
 				7B352D5827ABCDD700828E37 /* DateHelper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -172,6 +176,7 @@
 				7BE6F14427B026FF00C34B7E /* ObservationView.swift */,
 				7BE6F14627B02A8600C34B7E /* AirportView.swift */,
 				7BE6F14B27B5080E00C34B7E /* InfoView.swift */,
+				7B3FC5D927B97C8800D68386 /* StatusView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -218,6 +223,7 @@
 			name = "Redhill Weather";
 			packageProductDependencies = (
 				7B352D5727ABCDD700828E37 /* DateHelper */,
+				7B3FC5D727B830E400D68386 /* RefreshableScrollView */,
 			);
 			productName = "Redhill Weather";
 			productReference = 7B48AC3C27A485D8005B6351 /* Redhill Weather.app */;
@@ -293,6 +299,7 @@
 			mainGroup = 7B48AC3327A485D8005B6351;
 			packageReferences = (
 				7B352D5627ABCDD700828E37 /* XCRemoteSwiftPackageReference "DateHelper" */,
+				7B3FC5D627B830E400D68386 /* XCRemoteSwiftPackageReference "RefreshableScrollView" */,
 			);
 			productRefGroup = 7B48AC3D27A485D8005B6351 /* Products */;
 			projectDirPath = "";
@@ -338,6 +345,7 @@
 			files = (
 				7B352D5527A9E2E800828E37 /* Model.swift in Sources */,
 				7BE6F14C27B5080F00C34B7E /* InfoView.swift in Sources */,
+				7B3FC5DA27B97C8800D68386 /* StatusView.swift in Sources */,
 				7BE6F14127B0242700C34B7E /* Helpers.swift in Sources */,
 				7BE6F14727B02A8600C34B7E /* AirportView.swift in Sources */,
 				7BE6F13B27B0239600C34B7E /* Collection+Extension.swift in Sources */,
@@ -504,8 +512,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Redhill Weather/Preview Content\"";
 				DEVELOPMENT_TEAM = C2Y482MP9U;
 				ENABLE_PREVIEWS = YES;
@@ -536,8 +545,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Redhill Weather/Preview Content\"";
 				DEVELOPMENT_TEAM = C2Y482MP9U;
 				ENABLE_PREVIEWS = YES;
@@ -689,6 +699,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		7B3FC5D627B830E400D68386 /* XCRemoteSwiftPackageReference "RefreshableScrollView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/phuhuynh2411/RefreshableScrollView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -696,6 +714,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7B352D5627ABCDD700828E37 /* XCRemoteSwiftPackageReference "DateHelper" */;
 			productName = DateHelper;
+		};
+		7B3FC5D727B830E400D68386 /* RefreshableScrollView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B3FC5D627B830E400D68386 /* XCRemoteSwiftPackageReference "RefreshableScrollView" */;
+			productName = RefreshableScrollView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

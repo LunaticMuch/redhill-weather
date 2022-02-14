@@ -48,7 +48,7 @@ struct ObservationView: View {
                     Spacer()
                     Text("\(lastMetarReport.temperature) °C")
                 }
-                Divider()
+//                Divider()
                 HStack {
                     Text("Dew Point")
                     Spacer()
@@ -69,7 +69,7 @@ struct ObservationView: View {
                         }
                     }
                     if let layer2 = lastMetarReport.clouds[safe: 1] {
-                        Divider()
+//                        Divider()
                         HStack {
                             Text(cloudCoverage(layer2.cover))
                             Spacer()
@@ -77,7 +77,7 @@ struct ObservationView: View {
                         }
                     }
                     if let layer3 = lastMetarReport.clouds[safe: 2] {
-                        Divider()
+//                        Divider()
                         HStack {
                             Text(cloudCoverage(layer3.cover))
                             Spacer()
@@ -90,6 +90,16 @@ struct ObservationView: View {
                 Text("No Clouds Detected").padding()
                 Spacer()
             }
+            }
+            Group {
+                if let weather = decodeWeather(lastMetarReport.weather), weather != "" {
+                    Divider()
+                    HStack {
+                        Text("Weather")
+                        Spacer()
+                        Text(weather)
+                    }
+                }
             }
         }
         .padding()

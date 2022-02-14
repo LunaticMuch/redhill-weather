@@ -7,8 +7,8 @@
 
 import Foundation
 
+// MARK: - This struct is a real mess. It is a bit of outrageous code but the starting point, ie the JSON returned by the API,
 
-// MARK - This struct is a real mess. It is a bit of outrageous code but the starting point, ie the JSON returned by the API,
 // is bad, undocumented and frankly not even nicely modelled.
 
 struct Metar: Decodable {
@@ -31,6 +31,7 @@ struct Metar: Decodable {
     var windDirection: Int
     var windBetweenTo: Int
     var windSpeedGust: Int
+    var weather: String
 
     struct CloudCoverage: Decodable {
         var type: Int = 0
@@ -49,7 +50,7 @@ struct Metar: Decodable {
     
     // "Reports"."metarReport"
     enum MetarReportKeys: String, CodingKey {
-        case auto, arrivalAtis, time, temperature, cloud, cavok, qnh, airfieldQfe, visibility
+        case auto, arrivalAtis, time, temperature, cloud, cavok, qnh, airfieldQfe, visibility, weather
     }
     
     enum VisibilityKeys: String, CodingKey {
@@ -58,6 +59,10 @@ struct Metar: Decodable {
     
     enum TemperatureKeys: String, CodingKey {
         case temperature, dewPoint
+    }
+    
+    enum WeatherKeys: String, CodingKey {
+        case fullReportString
     }
     
     enum CloudKeys: String, CodingKey {
@@ -77,7 +82,7 @@ struct Metar: Decodable {
         case wind2Min
     }
     
-    enum RecentWindContainer: String, CodingKey  {
+    enum RecentWindContainer: String, CodingKey {
         case isVrb, averageWindSpeed, averageWindDirection, minimumWindDirection, maximumWindDirection, maximumWindSpeed
     }
     
@@ -105,9 +110,15 @@ struct Metar: Decodable {
         self.temperature = try temperatureContainer.decode(Int.self, forKey: .temperature)
         self.dewPoint = try temperatureContainer.decode(Int.self, forKey: .dewPoint)
         
-        // Visibility
-        let visibilityContainer = try metarContainer.nestedContainer(keyedBy: VisibilityKeys.self, forKey: .visibility)
-        self.visibility = try visibilityContainer.decode(Int.self, forKey: .visibility)
+        // Visibility - This is returned nil when CAVOK 
+        if self.isCavok == false {
+            let visibilityContainer = try metarContainer.nestedContainer(keyedBy: VisibilityKeys.self, forKey: .visibility)
+            self.visibility = try visibilityContainer.decode(Int.self, forKey: .visibility)
+        } else { self.visibility = 9999 }
+
+        // Weather
+        let weatherContainer = try metarContainer.nestedContainer(keyedBy: WeatherKeys.self, forKey: .weather)
+        self.weather = try weatherContainer.decode(String.self, forKey: .fullReportString)
         
         // Clouds
         let cloudContainer = try metarContainer.nestedContainer(keyedBy: CloudKeys.self, forKey: .cloud)
@@ -156,8 +167,6 @@ struct Metar: Decodable {
         self.windBetweenFrom = 0
         self.windBetweenTo = 0
         self.windSpeedGust = 0
+        self.weather = ""
     }
-
 }
-
-

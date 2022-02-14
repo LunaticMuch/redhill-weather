@@ -8,20 +8,17 @@
 import SwiftUI
 
 struct MetarView: View {
-
     let lastMetarReport: Metar
-    
+
     var body: some View {
-        Text("FULL METAR")
+         Text("FULL METAR")
             .font(.subheadline)
             .fontWeight(.semibold)
             .padding(.top, 9)
             .padding(.bottom, -2)
         
-        HStack {
-            Spacer()
+        HStack(alignment: .center) {
             Text(lastMetarReport.metar)
-            Spacer()
         }
         .padding()
         .background(Color(UIColor.systemGray6).clipShape(RoundedRectangle(cornerRadius: 5)))

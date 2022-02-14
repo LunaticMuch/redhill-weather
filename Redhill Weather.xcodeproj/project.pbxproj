@@ -12,6 +12,7 @@
 		7B352D5827ABCDD700828E37 /* DateHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 7B352D5727ABCDD700828E37 /* DateHelper */; };
 		7B3FC5D827B830E400D68386 /* RefreshableScrollView in Frameworks */ = {isa = PBXBuildFile; productRef = 7B3FC5D727B830E400D68386 /* RefreshableScrollView */; };
 		7B3FC5DA27B97C8800D68386 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3FC5D927B97C8800D68386 /* StatusView.swift */; };
+		7B3FC5DC27B9A5AC00D68386 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3FC5DB27B9A5AC00D68386 /* String+Extension.swift */; };
 		7B48AC4027A485D8005B6351 /* Redhill_WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B48AC3F27A485D8005B6351 /* Redhill_WeatherApp.swift */; };
 		7B48AC4227A485D8005B6351 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B48AC4127A485D8005B6351 /* ContentView.swift */; };
 		7B48AC4427A485DA005B6351 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B48AC4327A485DA005B6351 /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		7B15C74527A6FF580058F64D /* Redhill-Weather-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Redhill-Weather-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7B352D5427A9E2E800828E37 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		7B3FC5D927B97C8800D68386 /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
+		7B3FC5DB27B9A5AC00D68386 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		7B48AC3C27A485D8005B6351 /* Redhill Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Redhill Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B48AC3F27A485D8005B6351 /* Redhill_WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redhill_WeatherApp.swift; sourceTree = "<group>"; };
 		7B48AC4127A485D8005B6351 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 			children = (
 				7BE6F13A27B0239600C34B7E /* Collection+Extension.swift */,
 				7BE6F14927B125F900C34B7E /* Date+Extension.swift */,
+				7B3FC5DB27B9A5AC00D68386 /* String+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				7BE6F14127B0242700C34B7E /* Helpers.swift in Sources */,
 				7BE6F14727B02A8600C34B7E /* AirportView.swift in Sources */,
 				7BE6F13B27B0239600C34B7E /* Collection+Extension.swift in Sources */,
+				7B3FC5DC27B9A5AC00D68386 /* String+Extension.swift in Sources */,
 				7B48AC4227A485D8005B6351 /* ContentView.swift in Sources */,
 				7BE6F14A27B125F900C34B7E /* Date+Extension.swift in Sources */,
 				7B48AC4027A485D8005B6351 /* Redhill_WeatherApp.swift in Sources */,
@@ -514,7 +518,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"Redhill Weather/Preview Content\"";
 				DEVELOPMENT_TEAM = C2Y482MP9U;
 				ENABLE_PREVIEWS = YES;
@@ -547,7 +551,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"Redhill Weather/Preview Content\"";
 				DEVELOPMENT_TEAM = C2Y482MP9U;
 				ENABLE_PREVIEWS = YES;

@@ -47,12 +47,13 @@ struct ContentView: View {
                                 .foregroundColor(Color(UIColor.systemYellow))
                         }
                     }}
-                }
+                
                 .padding()
                 StatusView(lastMetarReport: metar.lastMetarReport)
                 AirportView(lastMetarReport: metar.lastMetarReport)
                 ObservationView(lastMetarReport: metar.lastMetarReport)
                 MetarView(lastMetarReport: metar.lastMetarReport)
+            }
             }.padding()
              .onChange(of: scenePhase) { newPhase in
                     switch newPhase {

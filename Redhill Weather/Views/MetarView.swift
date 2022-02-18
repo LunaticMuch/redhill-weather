@@ -18,8 +18,11 @@ struct MetarView: View {
             .padding(.bottom, -2)
         
         HStack(alignment: .center) {
+            Spacer()
             Text(lastMetarReport.metar)
+            Spacer()
         }
+        .fixedSize(horizontal: false, vertical: true)
         .padding()
         .background(Color(UIColor.systemGray6).clipShape(RoundedRectangle(cornerRadius: 5)))
         Spacer()

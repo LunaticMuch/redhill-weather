@@ -13,9 +13,10 @@ struct ContentView: View {
     @ObservedObject var metar = RedhillMetar()
     @Environment(\.scenePhase) var scenePhase
 
-    //@State var isUpdated: Bool = true
+    // @State var isUpdated: Bool = true
 
     // MARK: This function checks whether the metar was issued more than 30 mins from now
+
     func checkRefresh() {
         print("Checking")
         let now = Date()
@@ -33,10 +34,11 @@ struct ContentView: View {
             VStack(alignment: .leading) {
                 HStack {
                     VStack(alignment: .leading) {
+                        let updatedOnTime = Date(fromString: metar.lastMetarReport.updatedOn, format: .isoDateTimeFull)?.toString(format: .custom("HH:mm")) ?? ""
                         Text("Redhill Airport")
                             .font(.largeTitle)
                             .fontWeight(.bold)
-                        Text("ATIS information").fontWeight(.bold)
+                        Text("ATIS information at \(updatedOnTime)").fontWeight(.bold)
                     }
                     Spacer()
                     VStack {
@@ -46,31 +48,31 @@ struct ContentView: View {
                                 .frame(width: 40, height: 40)
                                 .foregroundColor(Color(UIColor.systemYellow))
                         }
-                    }}
-                
+                    }
+                }
+
                 .padding()
                 StatusView(lastMetarReport: metar.lastMetarReport)
-                AirportView(lastMetarReport: metar.lastMetarReport)
+                // AirportView(lastMetarReport: metar.lastMetarReport)
                 ObservationView(lastMetarReport: metar.lastMetarReport)
                 MetarView(lastMetarReport: metar.lastMetarReport)
             }
-            }.padding()
-             .onChange(of: scenePhase) { newPhase in
-                    switch newPhase {
-                    case .inactive:
-                        return
-                    case .active:
-                        checkRefresh()
-                    case .background:
-                        return
-                    @unknown default:
-                        return
-                    }
+        }.padding()
+            .onChange(of: scenePhase) { newPhase in
+                switch newPhase {
+                case .inactive:
+                    return
+                case .active:
+                    checkRefresh()
+                case .background:
+                    return
+                @unknown default:
+                    return
                 }
-            // End of RefreshableScrollView
-        }
+            }
+        // End of RefreshableScrollView
     }
-
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

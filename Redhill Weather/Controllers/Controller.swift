@@ -8,7 +8,7 @@
 import Foundation
 
 class RedhillMetar: NSObject, URLSessionDelegate, ObservableObject {
-    @Published var lastMetarReport: Metar = Metar()
+    @Published var lastMetarReport: Metar = .init()
     @Published var isRefreshing: Bool = false
     @Published var isUpdated: Bool = true
     
@@ -18,7 +18,7 @@ class RedhillMetar: NSObject, URLSessionDelegate, ObservableObject {
     }
     
     func loadMetar() {
-        self.isRefreshing = true
+        isRefreshing = true
         let url = URL(string: "https://egkr-mini-metcom.ste.io:8080/api/SamosApi/GetData")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
@@ -42,14 +42,16 @@ class RedhillMetar: NSObject, URLSessionDelegate, ObservableObject {
         let task = session.dataTask(with: request) {
             data, _, error in
             if error == nil {
-                print("I got some data")
+                // Check the data really containts data
                 guard let data = data else { return }
                 let decoder = JSONDecoder()
-                self.lastMetarReport = try! decoder.decode(Metar.self, from: data)
-                // TODO: Remove this before first public release
-                print(self.lastMetarReport)
-                self.isRefreshing = false
-                self.isUpdated = true
+                // Check the metar can be decoded correctly
+                if let decodedMetar = try? decoder.decode(Metar.self, from: data) {
+                    // TODO: Remove this before first public release
+                    self.lastMetarReport = decodedMetar
+                    self.isRefreshing = false
+                    self.isUpdated = true
+                } else { return }
             }
         }
         task.resume()

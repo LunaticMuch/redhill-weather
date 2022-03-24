@@ -47,11 +47,10 @@ class RedhillMetar: NSObject, URLSessionDelegate, ObservableObject {
                 let decoder = JSONDecoder()
                 // Check the metar can be decoded correctly
                 if let decodedMetar = try? decoder.decode(Metar.self, from: data) {
-                    // TODO: Remove this before first public release
                     self.lastMetarReport = decodedMetar
                     self.isRefreshing = false
                     self.isUpdated = true
-                } else { return }
+                } else { self.isRefreshing = false; self.isUpdated = true; return }
             }
         }
         task.resume()

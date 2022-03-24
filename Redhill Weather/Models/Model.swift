@@ -110,7 +110,7 @@ struct Metar: Decodable {
         self.temperature = try temperatureContainer.decode(Int.self, forKey: .temperature)
         self.dewPoint = try temperatureContainer.decode(Int.self, forKey: .dewPoint)
         
-        // Visibility - This is returned nil when CAVOK 
+        // Visibility - This is returned nil when CAVOK
         if self.isCavok == false {
             let visibilityContainer = try metarContainer.nestedContainer(keyedBy: VisibilityKeys.self, forKey: .visibility)
             self.visibility = try visibilityContainer.decode(Int.self, forKey: .visibility)
@@ -141,10 +141,22 @@ struct Metar: Decodable {
         let recentWindContainer = try windContainer.nestedContainer(keyedBy: RecentWindContainer.self, forKey: .wind2Min)
         self.windSpeed = try recentWindContainer.decode(Int.self, forKey: .averageWindSpeed)
         self.isWindVariable = try recentWindContainer.decode(Bool.self, forKey: .isVrb)
-        self.windBetweenFrom = try recentWindContainer.decode(Int.self, forKey: .minimumWindDirection)
-        self.windBetweenTo = try recentWindContainer.decode(Int.self, forKey: .maximumWindDirection)
+        
+        if let windFrom = try? recentWindContainer.decode(Int.self, forKey: .minimumWindDirection) {
+            self.windBetweenFrom = windFrom
+        } else
+        { self.windBetweenFrom = 0 }
+    
+        if let windTo = try? recentWindContainer.decode(Int.self, forKey: .minimumWindDirection) {
+            self.windBetweenTo = windTo
+        } else
+        { self.windBetweenTo = 0 }
+        
         self.windSpeedGust = try recentWindContainer.decode(Int.self, forKey: .maximumWindSpeed)
-        self.windDirection = try recentWindContainer.decode(Int.self, forKey: .averageWindDirection)
+        if let windDirection = try? recentWindContainer.decode(Int.self, forKey: .averageWindDirection) {
+            self.windDirection = windDirection
+        } else
+        { self.windDirection = 0 }
     }
     
     init() {

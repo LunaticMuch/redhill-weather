@@ -19,13 +19,13 @@ class RedhillMetar: NSObject, URLSessionDelegate, ObservableObject {
     
     func loadMetar() {
         isRefreshing = true
-        let url = URL(string: "https://egkr-mini-metcom.ste.io:8080/api/SamosApi/GetData")!
+        let url = URL(string: "https://redhill.samosmma.com/api/SamosApi/GetData")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("application/json, text/plain", forHTTPHeaderField: "Accept")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.setValue("Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkFub255bW91cyIsIm5iZiI6MTY0MzQwMDk1OSwiZXhwIjoyMTE2NDQwOTU5LCJpYXQiOjE2NDM0MDA5NTl9.ihQXbP5ihhStUFDbvBxO0yp8WCQQd5_tpPijBNnCrOA", forHTTPHeaderField: "Authorization")
-        request.setValue("https://81.2.71.178:8080/mini-met", forHTTPHeaderField: "Referer")
+        request.setValue("Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkFub255bW91cyIsIm5iZiI6MTY1ODU5ODc3OSwiZXhwIjoyMTMxNjM4Nzc5LCJpYXQiOjE2NTg1OTg3Nzl9.KarH9RcN-NTjbc_SvyUdloKPSY0Y_gwv1NcY1OlmrXc", forHTTPHeaderField: "Authorization")
+        request.setValue("https://redhill.samosmma.com/mini-met", forHTTPHeaderField: "Referer")
         
         // prepare json data
         let json: [String: Any] = ["$type": "Miros.Models.SiteQuery, Miros.Repository.Models", "ids": ["828f98f5-8191-48f4-8a71-e48d288759d4"]]

@@ -20,6 +20,7 @@
 		7B48AC5127A485DB005B6351 /* Redhill_WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B48AC5027A485DB005B6351 /* Redhill_WeatherTests.swift */; };
 		7B48AC5B27A485DB005B6351 /* Redhill_WeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B48AC5A27A485DB005B6351 /* Redhill_WeatherUITests.swift */; };
 		7B48AC5D27A485DB005B6351 /* Redhill_WeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B48AC5C27A485DB005B6351 /* Redhill_WeatherUITestsLaunchTests.swift */; };
+		7B72DDD7288C721200809DDE /* Redhill-Weather-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B72DDD6288C721200809DDE /* Redhill-Weather-Info.plist */; };
 		7BE6F13B27B0239600C34B7E /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE6F13A27B0239600C34B7E /* Collection+Extension.swift */; };
 		7BE6F14127B0242700C34B7E /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE6F14027B0242700C34B7E /* Helpers.swift */; };
 		7BE6F14327B024DD00C34B7E /* MetarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE6F14227B024DD00C34B7E /* MetarView.swift */; };
@@ -48,7 +49,6 @@
 
 /* Begin PBXFileReference section */
 		7B15C74327A6E4D60058F64D /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
-		7B15C74527A6FF580058F64D /* Redhill-Weather-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Redhill-Weather-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7B352D5427A9E2E800828E37 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		7B3FC5D927B97C8800D68386 /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
 		7B3FC5DB27B9A5AC00D68386 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
@@ -62,6 +62,7 @@
 		7B48AC5627A485DB005B6351 /* Redhill WeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Redhill WeatherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B48AC5A27A485DB005B6351 /* Redhill_WeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redhill_WeatherUITests.swift; sourceTree = "<group>"; };
 		7B48AC5C27A485DB005B6351 /* Redhill_WeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redhill_WeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7B72DDD6288C721200809DDE /* Redhill-Weather-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Redhill-Weather-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7BE6F13A27B0239600C34B7E /* Collection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
 		7BE6F14027B0242700C34B7E /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		7BE6F14227B024DD00C34B7E /* MetarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetarView.swift; sourceTree = "<group>"; };
@@ -123,13 +124,13 @@
 		7B48AC3E27A485D8005B6351 /* Redhill Weather */ = {
 			isa = PBXGroup;
 			children = (
+				7B72DDD6288C721200809DDE /* Redhill-Weather-Info.plist */,
 				7BE6F13D27B023D000C34B7E /* Controllers */,
 				7BE6F13927B0238200C34B7E /* Extensions */,
 				7BE6F13F27B0240900C34B7E /* Helpers */,
 				7BE6F13E27B023DD00C34B7E /* Models */,
 				7B48AC4527A485DA005B6351 /* Preview Content */,
 				7BE6F13C27B023B200C34B7E /* Views */,
-				7B15C74527A6FF580058F64D /* Redhill-Weather-Info.plist */,
 				7B48AC3F27A485D8005B6351 /* Redhill_WeatherApp.swift */,
 				7B48AC4327A485DA005B6351 /* Assets.xcassets */,
 			);
@@ -322,6 +323,7 @@
 			files = (
 				7B48AC4727A485DA005B6351 /* Preview Assets.xcassets in Resources */,
 				7B48AC4427A485DA005B6351 /* Assets.xcassets in Resources */,
+				7B72DDD7288C721200809DDE /* Redhill-Weather-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,7 +538,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stefanocislaghi.Redhill-Weather";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -570,7 +572,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stefanocislaghi.Redhill-Weather";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

@@ -1,25 +1,23 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "DateHelper",
-        "repositoryURL": "https://github.com/melvitax/DateHelper.git",
-        "state": {
-          "branch": null,
-          "revision": "76d0840daab7288fc99b04a4c23d504f0394e083",
-          "version": "5.0.1"
-        }
-      },
-      {
-        "package": "RefreshableScrollView",
-        "repositoryURL": "https://github.com/phuhuynh2411/RefreshableScrollView",
-        "state": {
-          "branch": null,
-          "revision": "e06edf5dc4facc7fbf71179e8a94f0d1c7035ce3",
-          "version": "1.1.1"
-        }
+  "pins" : [
+    {
+      "identity" : "datehelper",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/melvitax/DateHelper.git",
+      "state" : {
+        "revision" : "76d0840daab7288fc99b04a4c23d504f0394e083",
+        "version" : "5.0.1"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "refreshablescrollview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/phuhuynh2411/RefreshableScrollView",
+      "state" : {
+        "revision" : "e06edf5dc4facc7fbf71179e8a94f0d1c7035ce3",
+        "version" : "1.1.1"
+      }
+    }
+  ],
+  "version" : 2
 }

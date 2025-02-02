@@ -92,7 +92,8 @@ struct ObservationView: View {
             }
             }
             Group {
-                if let weather = decodeWeather(lastMetarReport.weather), weather != "" {
+                let weather = decodeWeather(lastMetarReport.weather)
+                if weather != "" {
                     Divider()
                     HStack {
                         Text("Weather")

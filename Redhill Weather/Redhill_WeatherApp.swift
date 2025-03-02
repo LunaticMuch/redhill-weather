@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Redhill_WeatherApp: App {
+struct RedhillWeatherApp: App {
     var body: some Scene {
         WindowGroup {
             MainView()
@@ -19,14 +19,14 @@ struct Redhill_WeatherApp: App {
 struct MainView: View {
     var body: some View {
         TabView {
-            ContentView()
+            AtisView()
                 .tabItem {
-                    Label("Weather", systemImage: "cloud.sun.rain.fill")
+                    Label("ATIS", systemImage: "cloud.sun.rain.fill")
                 }
-            
-            InfoView()
+
+            SettingsView()
                 .tabItem {
-                    Label("Info", systemImage: "info.circle.fill")
+                    Label("Settings", systemImage: "gearshape.fill")
                 }
         }
     }

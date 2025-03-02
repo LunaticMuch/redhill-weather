@@ -27,7 +27,7 @@ struct InfoView: View {
                     .padding(.top, 40)
                     .font(.system(size: 20, weight: .bold))
                 VStack(spacing: 20) {
-                    Text("This application is freely based on the data provided the weather station at the airport. It is not officially endorsed by the airport or any local authority. It does not officially provide the information any pilot should use before and during a flight. Pilots are required to check weather information using official channels, like the H24 ATIS on channel 125.305 MHz, or the [+44 (0)1737 822947](tel:0044(0)1737822947) or [Redhill ATIS website](https://81.2.71.178:8080/)")
+                    Text("This application is freely based on the data provided the weather station at the airport.)")
                 }
                 .padding()
                 .background(RoundedRectangle(cornerRadius: 5)

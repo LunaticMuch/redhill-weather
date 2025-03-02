@@ -17,7 +17,7 @@ func cloudCoverage(_ cover: Int) -> String {
     }
 }
 
-func decodeWeather (_ codedMetar:String) -> String {
+func decodeWeather (_ codedMetar: String) -> String {
     var decoded: String = ""
     switch codedMetar.count {
     case 5: decoded += decodeWeatherCode(codedMetar.substring(with: 0..<1)) + " "
@@ -36,7 +36,7 @@ func decodeWeather (_ codedMetar:String) -> String {
 }
 
     // The decoder of weather codes
-fileprivate func decodeWeatherCode (_ code:String) -> String {
+private func decodeWeatherCode (_ code: String) -> String {
     switch code {
     case "VC": return "In the vicinity"
     case "MI": return "Shallow"

@@ -1,9 +1,7 @@
 name: Release on TestFlight
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - 'develop'
+
 jobs:
   build:
     runs-on: macos-15

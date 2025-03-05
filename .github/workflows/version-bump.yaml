@@ -1,0 +1,26 @@
+name: Bump version
+on:
+  workflow_dispatch:
+
+jobs:
+  report:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set new marketing version
+        run: |
+            VERSION=$(git rev-parse --short HEAD)
+            echo New version will be $VERSION
+            if [ -z "$VERSION" ]
+            then
+                echo "Error: No version number found in branch name."
+                exit 1
+            fi
+            agvtool new-version $VERSION
+      - name: Commit version bump
+        run: |
+            git config --global user.name 'CI Automation'
+            git config --global user.email 'ci-automation@users.noreply.github.com'
+            git commit -am "[CI] Bump version"
+            git push
+

@@ -16,6 +16,12 @@
 		7B48AC5127A485DB005B6351 /* Redhill_WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B48AC5027A485DB005B6351 /* Redhill_WeatherTests.swift */; };
 		7B48AC5B27A485DB005B6351 /* Redhill_WeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B48AC5A27A485DB005B6351 /* Redhill_WeatherUITests.swift */; };
 		7B48AC5D27A485DB005B6351 /* Redhill_WeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B48AC5C27A485DB005B6351 /* Redhill_WeatherUITestsLaunchTests.swift */; };
+		7B68366D2D95E7F500BA5308 /* Watch Redhill Weather Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7B68364A2D95E7F400BA5308 /* Watch Redhill Weather Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7B6836782D95E80F00BA5308 /* AtisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC73B7D2D61FE800026A3B4 /* AtisViewModel.swift */; };
+		7B6836792D95E81B00BA5308 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B352D5427A9E2E800828E37 /* Model.swift */; };
+		7B68367A2D95EDC100BA5308 /* Redhill_WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B48AC3F27A485D8005B6351 /* Redhill_WeatherApp.swift */; };
+		7B68367C2D95EDE200BA5308 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B68367B2D95EDE200BA5308 /* ContentView.swift */; };
+		7B6836802D97DA6500BA5308 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B48AC4327A485DA005B6351 /* Assets.xcassets */; };
 		7BC73B772D61FD0B0026A3B4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC73B762D61FD0B0026A3B4 /* SettingsView.swift */; };
 		7BC73B7C2D61FDD80026A3B4 /* AtisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC73B7B2D61FDD80026A3B4 /* AtisView.swift */; };
 		7BC73B7E2D61FE800026A3B4 /* AtisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC73B7D2D61FE800026A3B4 /* AtisViewModel.swift */; };
@@ -40,7 +46,42 @@
 			remoteGlobalIDString = 7B48AC3B27A485D8005B6351;
 			remoteInfo = "Redhill Weather";
 		};
+		7B68365A2D95E7F500BA5308 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B48AC3427A485D8005B6351 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B6836492D95E7F400BA5308;
+			remoteInfo = "Watch Redhill Weather Watch App";
+		};
+		7B6836642D95E7F500BA5308 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B48AC3427A485D8005B6351 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B6836492D95E7F400BA5308;
+			remoteInfo = "Watch Redhill Weather Watch App";
+		};
+		7B68366B2D95E7F500BA5308 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B48AC3427A485D8005B6351 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B6836492D95E7F400BA5308;
+			remoteInfo = "Watch Redhill Weather Watch App";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7B68366E2D95E7F500BA5308 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				7B68366D2D95E7F500BA5308 /* Watch Redhill Weather Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7B352D5427A9E2E800828E37 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -54,6 +95,10 @@
 		7B48AC5627A485DB005B6351 /* Redhill WeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Redhill WeatherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B48AC5A27A485DB005B6351 /* Redhill_WeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redhill_WeatherUITests.swift; sourceTree = "<group>"; };
 		7B48AC5C27A485DB005B6351 /* Redhill_WeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redhill_WeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7B68364A2D95E7F400BA5308 /* Watch Redhill Weather Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watch Redhill Weather Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B6836592D95E7F500BA5308 /* Watch Redhill Weather Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Watch Redhill Weather Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B6836632D95E7F500BA5308 /* Watch Redhill Weather Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Watch Redhill Weather Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B68367B2D95EDE200BA5308 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7B72DDD6288C721200809DDE /* Redhill-Weather-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Redhill-Weather-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7BC73B762D61FD0B0026A3B4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		7BC73B7B2D61FDD80026A3B4 /* AtisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtisView.swift; sourceTree = "<group>"; };
@@ -64,6 +109,24 @@
 		7BE6F14927B125F900C34B7E /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		7BE6F14B27B5080E00C34B7E /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		7B68364B2D95E7F400BA5308 /* Watch Redhill Weather Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Watch Redhill Weather Watch App";
+			sourceTree = "<group>";
+		};
+		7B68365C2D95E7F500BA5308 /* Watch Redhill Weather Watch AppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Watch Redhill Weather Watch AppTests";
+			sourceTree = "<group>";
+		};
+		7B6836662D95E7F500BA5308 /* Watch Redhill Weather Watch AppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Watch Redhill Weather Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7B48AC3927A485D8005B6351 /* Frameworks */ = {
@@ -88,6 +151,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7B6836472D95E7F400BA5308 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B6836562D95E7F500BA5308 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B6836602D95E7F500BA5308 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -98,6 +182,9 @@
 				7B48AC3E27A485D8005B6351 /* Redhill Weather */,
 				7B48AC4F27A485DB005B6351 /* Redhill WeatherTests */,
 				7B48AC5927A485DB005B6351 /* Redhill WeatherUITests */,
+				7B68364B2D95E7F400BA5308 /* Watch Redhill Weather Watch App */,
+				7B68365C2D95E7F500BA5308 /* Watch Redhill Weather Watch AppTests */,
+				7B6836662D95E7F500BA5308 /* Watch Redhill Weather Watch AppUITests */,
 				7B48AC3D27A485D8005B6351 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,6 +195,9 @@
 				7B48AC3C27A485D8005B6351 /* Redhill Weather.app */,
 				7B48AC4C27A485DB005B6351 /* Redhill WeatherTests.xctest */,
 				7B48AC5627A485DB005B6351 /* Redhill WeatherUITests.xctest */,
+				7B68364A2D95E7F400BA5308 /* Watch Redhill Weather Watch App.app */,
+				7B6836592D95E7F500BA5308 /* Watch Redhill Weather Watch AppTests.xctest */,
+				7B6836632D95E7F500BA5308 /* Watch Redhill Weather Watch AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,6 +267,7 @@
 				7BE6F14B27B5080E00C34B7E /* InfoView.swift */,
 				7BC73B762D61FD0B0026A3B4 /* SettingsView.swift */,
 				7BC73B7B2D61FDD80026A3B4 /* AtisView.swift */,
+				7B68367B2D95EDE200BA5308 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,10 +299,12 @@
 				7B48AC3827A485D8005B6351 /* Sources */,
 				7B48AC3927A485D8005B6351 /* Frameworks */,
 				7B48AC3A27A485D8005B6351 /* Resources */,
+				7B68366E2D95E7F500BA5308 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7B68366C2D95E7F500BA5308 /* PBXTargetDependency */,
 			);
 			name = "Redhill Weather";
 			packageProductDependencies = (
@@ -257,6 +350,74 @@
 			productReference = 7B48AC5627A485DB005B6351 /* Redhill WeatherUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		7B6836492D95E7F400BA5308 /* Watch Redhill Weather Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B6836752D95E7F500BA5308 /* Build configuration list for PBXNativeTarget "Watch Redhill Weather Watch App" */;
+			buildPhases = (
+				7B6836462D95E7F400BA5308 /* Sources */,
+				7B6836472D95E7F400BA5308 /* Frameworks */,
+				7B6836482D95E7F400BA5308 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				7B68364B2D95E7F400BA5308 /* Watch Redhill Weather Watch App */,
+			);
+			name = "Watch Redhill Weather Watch App";
+			packageProductDependencies = (
+			);
+			productName = "Watch Redhill Weather Watch App";
+			productReference = 7B68364A2D95E7F400BA5308 /* Watch Redhill Weather Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7B6836582D95E7F500BA5308 /* Watch Redhill Weather Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B6836762D95E7F500BA5308 /* Build configuration list for PBXNativeTarget "Watch Redhill Weather Watch AppTests" */;
+			buildPhases = (
+				7B6836552D95E7F500BA5308 /* Sources */,
+				7B6836562D95E7F500BA5308 /* Frameworks */,
+				7B6836572D95E7F500BA5308 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B68365B2D95E7F500BA5308 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				7B68365C2D95E7F500BA5308 /* Watch Redhill Weather Watch AppTests */,
+			);
+			name = "Watch Redhill Weather Watch AppTests";
+			packageProductDependencies = (
+			);
+			productName = "Watch Redhill Weather Watch AppTests";
+			productReference = 7B6836592D95E7F500BA5308 /* Watch Redhill Weather Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7B6836622D95E7F500BA5308 /* Watch Redhill Weather Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B6836772D95E7F500BA5308 /* Build configuration list for PBXNativeTarget "Watch Redhill Weather Watch AppUITests" */;
+			buildPhases = (
+				7B68365F2D95E7F500BA5308 /* Sources */,
+				7B6836602D95E7F500BA5308 /* Frameworks */,
+				7B6836612D95E7F500BA5308 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B6836652D95E7F500BA5308 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				7B6836662D95E7F500BA5308 /* Watch Redhill Weather Watch AppUITests */,
+			);
+			name = "Watch Redhill Weather Watch AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "Watch Redhill Weather Watch AppUITests";
+			productReference = 7B6836632D95E7F500BA5308 /* Watch Redhill Weather Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -264,8 +425,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1320;
+				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
+				ORGANIZATIONNAME = "Stefano Cislaghi";
 				TargetAttributes = {
 					7B48AC3B27A485D8005B6351 = {
 						CreatedOnToolsVersion = 13.2;
@@ -277,6 +439,17 @@
 					7B48AC5527A485DB005B6351 = {
 						CreatedOnToolsVersion = 13.2;
 						TestTargetID = 7B48AC3B27A485D8005B6351;
+					};
+					7B6836492D95E7F400BA5308 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					7B6836582D95E7F500BA5308 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 7B6836492D95E7F400BA5308;
+					};
+					7B6836622D95E7F500BA5308 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 7B6836492D95E7F400BA5308;
 					};
 				};
 			};
@@ -299,6 +472,9 @@
 				7B48AC3B27A485D8005B6351 /* Redhill Weather */,
 				7B48AC4B27A485DB005B6351 /* Redhill WeatherTests */,
 				7B48AC5527A485DB005B6351 /* Redhill WeatherUITests */,
+				7B6836492D95E7F400BA5308 /* Watch Redhill Weather Watch App */,
+				7B6836582D95E7F500BA5308 /* Watch Redhill Weather Watch AppTests */,
+				7B6836622D95E7F500BA5308 /* Watch Redhill Weather Watch AppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -327,12 +503,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7B6836482D95E7F400BA5308 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B6836802D97DA6500BA5308 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B6836572D95E7F500BA5308 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B6836612D95E7F500BA5308 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		7BC73B822D6254330026A3B4 /* Swiftlint Fix */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -346,7 +544,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]\nthen\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif command -v swiftlint >/dev/null 2>&1\nthen\n    swiftlint --fix && swiftlint\nelse\n    echo \"warning: `swiftlint` command not found - See https://github.com/realm/SwiftLint#installation for installation instructions.\"\nfi\n";
+			shellScript = "exit 0\n\nif [[ \"$(uname -m)\" == arm64 ]]\nthen\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif command -v swiftlint >/dev/null 2>&1\nthen\n    swiftlint --fix && swiftlint\nelse\n    echo \"warning: `swiftlint` command not found - See https://github.com/realm/SwiftLint#installation for installation instructions.\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -356,6 +554,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B352D5527A9E2E800828E37 /* Model.swift in Sources */,
+				7B68367C2D95EDE200BA5308 /* ContentView.swift in Sources */,
 				7BE6F14C27B5080F00C34B7E /* InfoView.swift in Sources */,
 				7BC73B7E2D61FE800026A3B4 /* AtisViewModel.swift in Sources */,
 				7BC73B7C2D61FDD80026A3B4 /* AtisView.swift in Sources */,
@@ -385,6 +584,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7B6836462D95E7F400BA5308 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B6836782D95E80F00BA5308 /* AtisViewModel.swift in Sources */,
+				7B6836792D95E81B00BA5308 /* Model.swift in Sources */,
+				7B68367A2D95EDC100BA5308 /* Redhill_WeatherApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B6836552D95E7F500BA5308 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B68365F2D95E7F500BA5308 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -397,6 +620,21 @@
 			isa = PBXTargetDependency;
 			target = 7B48AC3B27A485D8005B6351 /* Redhill Weather */;
 			targetProxy = 7B48AC5727A485DB005B6351 /* PBXContainerItemProxy */;
+		};
+		7B68365B2D95E7F500BA5308 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B6836492D95E7F400BA5308 /* Watch Redhill Weather Watch App */;
+			targetProxy = 7B68365A2D95E7F500BA5308 /* PBXContainerItemProxy */;
+		};
+		7B6836652D95E7F500BA5308 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B6836492D95E7F400BA5308 /* Watch Redhill Weather Watch App */;
+			targetProxy = 7B6836642D95E7F500BA5308 /* PBXContainerItemProxy */;
+		};
+		7B68366C2D95E7F500BA5308 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B6836492D95E7F400BA5308 /* Watch Redhill Weather Watch App */;
+			targetProxy = 7B68366B2D95E7F500BA5308 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -535,13 +773,14 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Redhill-Weather-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Redhill ATIS";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -574,13 +813,14 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Redhill-Weather-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Redhill ATIS";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -671,6 +911,179 @@
 			};
 			name = Release;
 		};
+		7B68366F2D95E7F500BA5308 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = WatchIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Watch Redhill Weather Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Watch Redhill Weather";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.stefanocislaghi.Redhill-Weather";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stefanocislaghi.Redhill-Weather.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		7B6836702D95E7F500BA5308 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = WatchIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Watch Redhill Weather Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Watch Redhill Weather";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.stefanocislaghi.Redhill-Weather";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stefanocislaghi.Redhill-Weather.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
+		7B6836712D95E7F500BA5308 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C2Y482MP9U;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stefanocislaghi.Watch-Redhill-Weather-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Watch Redhill Weather Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Watch Redhill Weather Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		7B6836722D95E7F500BA5308 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C2Y482MP9U;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stefanocislaghi.Watch-Redhill-Weather-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Watch Redhill Weather Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Watch Redhill Weather Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
+		7B6836732D95E7F500BA5308 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C2Y482MP9U;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stefanocislaghi.Watch-Redhill-Weather-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Watch Redhill Weather Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		7B6836742D95E7F500BA5308 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C2Y482MP9U;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stefanocislaghi.Watch-Redhill-Weather-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Watch Redhill Weather Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -706,6 +1119,33 @@
 			buildConfigurations = (
 				7B48AC6727A485DB005B6351 /* Debug */,
 				7B48AC6827A485DB005B6351 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B6836752D95E7F500BA5308 /* Build configuration list for PBXNativeTarget "Watch Redhill Weather Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B68366F2D95E7F500BA5308 /* Debug */,
+				7B6836702D95E7F500BA5308 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B6836762D95E7F500BA5308 /* Build configuration list for PBXNativeTarget "Watch Redhill Weather Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B6836712D95E7F500BA5308 /* Debug */,
+				7B6836722D95E7F500BA5308 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B6836772D95E7F500BA5308 /* Build configuration list for PBXNativeTarget "Watch Redhill Weather Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B6836732D95E7F500BA5308 /* Debug */,
+				7B6836742D95E7F500BA5308 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

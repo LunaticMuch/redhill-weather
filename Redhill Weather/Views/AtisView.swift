@@ -9,7 +9,8 @@ import SwiftUI
 import DateHelper
 
 struct AtisView: View {
-    @State private var atis = AtisViewModel()
+//    @State private var atis = AtisViewModel()
+    @Environment(AtisViewModel.self) var atis
 
     var body: some View {
         NavigationStack {
@@ -88,4 +89,5 @@ struct AtisView: View {
 
 #Preview {
     AtisView()
+        .environment(AtisViewModel())
 }

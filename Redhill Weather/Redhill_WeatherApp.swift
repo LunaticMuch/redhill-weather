@@ -9,25 +9,12 @@ import SwiftUI
 
 @main
 struct RedhillWeatherApp: App {
+    @State private var atis = AtisViewModel()
+
     var body: some Scene {
         WindowGroup {
-            MainView()
-        }
-    }
-}
-
-struct MainView: View {
-    var body: some View {
-        TabView {
-            AtisView()
-                .tabItem {
-                    Label("ATIS", systemImage: "cloud.sun.rain.fill")
-                }
-
-            SettingsView()
-                .tabItem {
-                    Label("Settings", systemImage: "gearshape.fill")
-                }
+            ContentView()
+                .environment(atis)
         }
     }
 }
